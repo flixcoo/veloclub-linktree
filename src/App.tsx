@@ -1,17 +1,25 @@
-import {TREE_LINKS, SOCIAL_LINKS} from "./data/content.ts";
-import type {TreeLink, SocialLink} from "./data/types.ts";
+import {APPLE_MUSIC_EMBED_URL, SOCIAL_LINKS, SPOTIFY_EMBED_URL, TREE_LINKS} from "./data/content.ts";
+import type {SocialLink, TreeLink} from "./data/types.ts";
 
 function App() {
     return (
         <>
-            <section className={"flex items-center justify-center py-2"}>
+            <section className={"mt-12 mb-4 flex flex-col items-center  justify-center space-y-8"}>
+                {/* Linktree */}
                 <div className={"flex w-full max-w-120 flex-col items-center space-y-6"}>
 
                     {/* Name */}
-                    <h1 className={"text-center text-3xl text-black"}>Véloclub</h1>
+                    <h1
+                        className={"text-center text-3xl text-black lowercase select-none"}
+                        style={{fontFamily: "Antique Olive Compact, sans-serif"}}
+                    >Véloclub</h1>
 
                     {/* Band Image */}
-                    <img src={"images/profile.webp"} className={"size-50 "} alt={""}/>
+                    <a href={"https://veloclubband.de"}>
+                        <img src={"images/profile.webp"}
+                             className={"size-50 rounded-lg shadow-2xl transition-all duration-300 ease-in-out hover:scale-98"}
+                             alt={"Die Band Véloclub"}/>
+                    </a>
 
                     {/* Socials*/}
                     <span className={"mb-6 text-sm"}>Hey, check doch mal unsere Socials aus!</span>
@@ -20,7 +28,8 @@ function App() {
                                 const IconComponent = social.icon;
                                 return (
                                     <a href={social.url} title={social.title}>
-                                        <IconComponent className={"size-6 transition-colors hover:text-gray-700"}/>
+                                        <IconComponent
+                                            className={"size-6 transition-all duration-300 ease-in-out hover:scale-90"}/>
                                     </a>
                                 )
                             }
@@ -32,16 +41,64 @@ function App() {
                         {TREE_LINKS.map((link: TreeLink) => {
                                 return (
                                     <div
-                                        className={"flex w-full cursor-pointer flex-row items-center justify-start gap-3 rounded-sm bg-white p-2 transition-all duration-300 ease-in-out hover:scale-98 hover:shadow-md"}>
-                                        <div className={"size-12 bg-red-500"}></div>
+                                        className={"flex w-full cursor-pointer flex-row items-center justify-start gap-3 rounded-sm bg-white p-2 text-sm transition-all duration-300 ease-in-out hover:scale-98 hover:shadow-md"}>
+                                        <img className={"size-11 rounded-sm"} src={link.image} alt={link.title}/>
                                         <a href={link.url}>{link.title}</a>
                                     </div>
                                 )
                             }
                         )}
+
+                        {/* Spotify Embed */}
+                        <iframe
+                            src={SPOTIFY_EMBED_URL}
+                            width="100%"
+                            height="80"
+                            allow="encrypted-media"
+                            title={"Spotify Embed"}
+                            className={"rounded-sm"}
+                        />
+
+                        {/* Apple Music Embed */}
+                        <iframe
+                            src={APPLE_MUSIC_EMBED_URL}
+                            width="100%"
+                            height="450px"
+                            allow="encrypted-media"
+                            title={"Spotify Embed"}
+                            className={"rounded-sm "}
+                        />
                     </div>
                 </div>
+
+                {/* Footer */}
+                <footer className={"flex flex-col items-center justify-center gap-5 text-xs text-gray-500"}>
+
+                    <div className={"flex gap-4"}>
+                        <a
+                            className={"text-black underline transition-all duration-300 hover:text-orange-500"}
+                            href={"https://veloclubband.de/impressung"}
+                        >Impressum</a>
+
+                        <a
+                            className={"text-black underline transition-all duration-300 hover:text-orange-500"}
+                            href={"https://veloclubband.de/datenschutz"}
+                        >Datenschutz</a>
+                    </div>
+
+                    <span>
+                    Designed & developed by&nbsp;
+                        <a
+                            href="https://felixkirchner.de" target="_blank" rel="noopener noreferrer"
+                            className="text-black underline transition-colors hover:text-orange-500"
+                        >Felix Kirchner</a>.
+                </span>
+
+
+                </footer>
             </section>
+
+
         </>
     )
 }
