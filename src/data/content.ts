@@ -1,7 +1,7 @@
 import type {TreeLink, SocialLink} from "./types.ts";
 import {FaApple, FaFacebook, FaInstagram, FaSpotify, FaTiktok, FaYoutube} from "react-icons/fa";
 
-export const TREE_LINKS : TreeLink[] = [
+export const TREE_LINKS: TreeLink[] = [
     {
         title: "Das ist ein Beispiel",
         url: "https://veloclubband.com"
@@ -16,7 +16,7 @@ export const TREE_LINKS : TreeLink[] = [
     },
 ]
 
-export const SOCIAL_LINKS : SocialLink[] = [
+export const SOCIAL_LINKS: SocialLink[] = [
     {
         title: "Véloclub auf Instagram",
         url: "https://instagram.com/veloclubband",
@@ -24,7 +24,7 @@ export const SOCIAL_LINKS : SocialLink[] = [
     },
     {
         title: "Véloclub auf Spotify",
-        url : "https://spotify.com",
+        url: "https://spotify.com",
         icon: FaSpotify
     },
     {
