@@ -2,4 +2,14 @@
 
 body {
     @apply bg-gray-100 text-gray-900;
+    scroll-behavior: smooth;
+}
+
+/* Antique Olive Std - Compact Variant */
+@font-face {
+    font-family: 'Antique Olive Compact';
+    src: url('fonts/Antique-Olive-Std-Compact_3864.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
