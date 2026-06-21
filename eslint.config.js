@@ -29,7 +29,7 @@ export default defineConfig([
             "tailwindcss/classnames-order": "warn",
             "tailwindcss/no-arbitrary-value": "warn",
             "tailwindcss/no-custom-classname": [
-                "warn",
+                "off",
                 {whitelist: ["custom\\-*"]},
             ],
             "tailwindcss/no-contradicting-classname": "warn",
