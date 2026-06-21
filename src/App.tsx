@@ -1,4 +1,10 @@
-import {APPLE_MUSIC_EMBED_URL, SOCIAL_LINKS, SPOTIFY_EMBED_URL, TREE_LINKS} from "./data/content.ts";
+import {
+    APPLE_MUSIC_EMBED_URL,
+    SOCIAL_LINKS,
+    SOUNDCLOUD_EMBED_LINK,
+    SPOTIFY_EMBED_URL,
+    TREE_LINKS
+} from "./data/content.ts";
 import type {SocialLink, TreeLink} from "./data/types.ts";
 
 function App() {
@@ -38,10 +44,14 @@ function App() {
 
                     {/* Links */}
                     <div className={"flex w-full flex-col gap-2 px-4"}>
-                        {TREE_LINKS.map((link: TreeLink) => {
+                        {TREE_LINKS.map((link: TreeLink, index: number) => {
+                                const animationDurationMs = 300 + index * 125;
                                 return (
                                     <div
-                                        className={"flex w-full cursor-pointer flex-row items-center justify-start gap-3 rounded-sm bg-white p-2 text-sm transition-all duration-300 ease-in-out hover:scale-98 hover:shadow-md"}>
+                                        key={link.url}
+                                        className={"link-intro flex w-full cursor-pointer flex-row items-center justify-start gap-3 rounded-sm bg-white p-2 text-sm shadow-md transition-all duration-300 ease-in-out hover:scale-95"}
+                                        style={{animationDuration: `${animationDurationMs}ms`}}
+                                    >
                                         <img className={"size-11 rounded-sm"} src={link.image} alt={link.title}/>
                                         <a href={link.url}>{link.title}</a>
                                     </div>
@@ -55,8 +65,8 @@ function App() {
                             width="100%"
                             height="80"
                             allow="encrypted-media"
-                            title={"Spotify Embed"}
-                            className={"rounded-sm"}
+                            className={"link-intro rounded-sm"}
+                            style={{animationDuration: `${300 + (TREE_LINKS.length) * 125}ms`}}
                         />
 
                         {/* Apple Music Embed */}
@@ -65,8 +75,17 @@ function App() {
                             width="100%"
                             height="450px"
                             allow="encrypted-media"
-                            title={"Spotify Embed"}
-                            className={"rounded-sm "}
+                            className={"link-intro rounded-sm"}
+                            style={{animationDuration: `${300 + (TREE_LINKS.length + 1) * 125}ms`}}
+                        />
+
+                        {/* Sundcloud Embed */}
+                        <iframe
+                            src={SOUNDCLOUD_EMBED_LINK}
+                            allowFullScreen
+                            allow="encrypted-media *;"
+                            className={"link-intro rounded-sm"}
+                            style={{animationDuration: `${300 + (TREE_LINKS.length + 2) * 125}ms`}}
                         />
                     </div>
                 </div>

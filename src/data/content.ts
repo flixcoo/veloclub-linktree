@@ -5,6 +5,8 @@ export const SPOTIFY_EMBED_URL: string = 'https://open.spotify.com/embed/artist/
 
 export const APPLE_MUSIC_EMBED_URL: string = 'https://embed.music.apple.com/de/album/gef%C3%BChle-an-gef%C3%BChle-aus/6770928701';
 
+export const SOUNDCLOUD_EMBED_LINK: string = "https://w.soundcloud.com/player/?visual=true&url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2235664676&show_artwork=true&show_comments=false";
+
 export const TREE_LINKS: TreeLink[] = [
     {
         title: "gefühle an, gefühle aus out now!",
