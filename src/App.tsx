@@ -21,9 +21,9 @@ function App() {
                     >Véloclub</h1>
 
                     {/* Band Image */}
-                    <a href={"https://veloclubband.de"}>
+                    <a href={"https://veloclubband.de"} target="_blank" rel="noopener noreferrer">
                         <img src={"images/profile.webp"}
-                             className={"size-50 rounded-lg shadow-2xl transition-all duration-300 ease-in-out hover:scale-98"}
+                             className={"shadow-uxl size-50 rounded-full transition-all duration-300 ease-in-out hover:scale-98"}
                              alt={"Die Band Véloclub"}/>
                     </a>
 
