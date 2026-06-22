@@ -28,11 +28,6 @@ export const TREE_LINKS: TreeLink[] = [
         url: "https://rausgegangen.de/events/konzert-velo-club-0/",
         image: "images/umbaubar.webp",
     },
-    {
-        title: "Booking",
-        url: "mailto:booking@veloclubband.de",
-        image: "images/booking.webp",
-    },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [

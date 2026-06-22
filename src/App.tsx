@@ -59,6 +59,23 @@ function App() {
                             }
                         )}
 
+                        <div className={"flex gap-4"}>
+                            <div
+                                className={"link-intro flex w-full cursor-pointer flex-row items-center justify-start gap-3 rounded-sm bg-white p-2 text-sm shadow-md transition-all duration-300 ease-in-out hover:scale-95"}
+                                style={{animationDuration: `${300 + TREE_LINKS.length * 125}ms`}}
+                            >
+                                <div className={"pr-1 text-4xl"}>🎫</div>
+                                <a href={"mailto:booking@veloclubband.de"}>{"Booking"}</a>
+                            </div>
+                            <div
+                                className={"link-intro flex  w-full cursor-pointer flex-row items-center justify-start gap-3 rounded-sm bg-white p-2 text-sm shadow-md transition-all duration-300 ease-in-out hover:scale-95"}
+                                style={{animationDuration: `${300 + TREE_LINKS.length * 125}ms`}}
+                            >
+                                <div className={"pr-1 text-4xl"}>📧</div>
+                                <a href={"mailto:hi@veloclubband.de"}>{"Kontakt"}</a>
+                            </div>
+                        </div>
+
                         {/* Spotify Embed */}
                         <iframe
                             src={SPOTIFY_EMBED_URL}
@@ -66,7 +83,7 @@ function App() {
                             height="80"
                             allow="encrypted-media"
                             className={"link-intro rounded-sm"}
-                            style={{animationDuration: `${300 + (TREE_LINKS.length) * 125}ms`}}
+                            style={{animationDuration: `${300 + (TREE_LINKS.length + 1) * 125}ms`}}
                         />
 
                         {/* Apple Music Embed */}
@@ -76,7 +93,7 @@ function App() {
                             height="450px"
                             allow="encrypted-media"
                             className={"link-intro rounded-sm"}
-                            style={{animationDuration: `${300 + (TREE_LINKS.length + 1) * 125}ms`}}
+                            style={{animationDuration: `${300 + (TREE_LINKS.length + 2) * 125}ms`}}
                         />
 
                         {/* Sundcloud Embed */}
@@ -85,7 +102,7 @@ function App() {
                             allowFullScreen
                             allow="encrypted-media *;"
                             className={"link-intro rounded-sm"}
-                            style={{animationDuration: `${300 + (TREE_LINKS.length + 2) * 125}ms`}}
+                            style={{animationDuration: `${300 + (TREE_LINKS.length + 3) * 125}ms`}}
                         />
                     </div>
                 </div>
