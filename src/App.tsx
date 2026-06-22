@@ -47,33 +47,37 @@ function App() {
                         {TREE_LINKS.map((link: TreeLink, index: number) => {
                                 const animationDurationMs = 300 + index * 125;
                                 return (
-                                    <div
-                                        key={link.url}
-                                        className={"link-intro flex w-full cursor-pointer flex-row items-center justify-start gap-3 rounded-sm bg-white p-2 text-sm shadow-md transition-all duration-300 ease-in-out hover:scale-95"}
-                                        style={{animationDuration: `${animationDurationMs}ms`}}
-                                    >
-                                        <img className={"size-11 rounded-sm"} src={link.image} alt={link.title}/>
-                                        <a href={link.url}>{link.title}</a>
-                                    </div>
+                                    <a href={link.url}>
+                                        <div
+                                            key={link.url}
+                                            className={"link-intro flex w-full cursor-pointer flex-row items-center justify-start gap-3 rounded-sm bg-white p-2 text-sm shadow-md transition-all duration-300 ease-in-out hover:scale-95"}
+                                            style={{animationDuration: `${animationDurationMs}ms`}}
+                                        >
+                                            <img className={"size-11 rounded-sm"} src={link.image} alt={link.title}/>
+                                            {link.title}
+                                        </div>
+                                    </a>
                                 )
                             }
                         )}
 
-                        <div className={"flex gap-4"}>
-                            <div
+                        <div className={"flex gap-3"}>
+                            <a
+                                href={"mailto:booking@veloclubband.de"}
                                 className={"link-intro flex w-full cursor-pointer flex-row items-center justify-start gap-3 rounded-sm bg-white p-2 text-sm shadow-md transition-all duration-300 ease-in-out hover:scale-95"}
                                 style={{animationDuration: `${300 + TREE_LINKS.length * 125}ms`}}
                             >
                                 <div className={"pr-1 text-4xl"}>🎫</div>
-                                <a href={"mailto:booking@veloclubband.de"}>{"Booking"}</a>
-                            </div>
-                            <div
-                                className={"link-intro flex  w-full cursor-pointer flex-row items-center justify-start gap-3 rounded-sm bg-white p-2 text-sm shadow-md transition-all duration-300 ease-in-out hover:scale-95"}
+                                <span>Booking</span>
+                            </a>
+                            <a
+                                href={"mailto:hi@veloclubband.de"}
+                                className={"link-intro flex w-full cursor-pointer flex-row items-center justify-start gap-3 rounded-sm bg-white p-2 text-sm shadow-md transition-all duration-300 ease-in-out hover:scale-95"}
                                 style={{animationDuration: `${300 + TREE_LINKS.length * 125}ms`}}
                             >
                                 <div className={"pr-1 text-4xl"}>📧</div>
-                                <a href={"mailto:hi@veloclubband.de"}>{"Kontakt"}</a>
-                            </div>
+                                <span>Kontakt</span>
+                            </a>
                         </div>
 
                         {/* Spotify Embed */}
