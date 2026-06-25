@@ -4,7 +4,7 @@ export function Footer() {
             <div className={"flex gap-4"}>
                 <a
                     className={"text-black underline transition-all duration-300 hover:text-orange-500"}
-                    href={"https://veloclubband.de/impressung"}
+                    href={"https://veloclubband.de/impressum"}
                 >
                     Impressum
                 </a>
