@@ -1,5 +1,5 @@
 import type {SocialLink, TreeLink} from "./types.ts";
-import {SiApplemusic, SiInstagram, SiSpotify, SiTiktok, SiYoutube} from "react-icons/si";
+import {SiApplemusic, SiBandsintown, SiInstagram, SiSpotify, SiTiktok, SiYoutube} from "react-icons/si";
 import {FaGlobe} from "react-icons/fa";
 
 export const SPOTIFY_EMBED_URL: string = 'https://open.spotify.com/embed/artist/2ATI9IAeXPE31HKReWj40a?theme=0';
@@ -38,14 +38,19 @@ export const SOCIAL_LINKS: SocialLink[] = [
         icon: SiInstagram,
     },
     {
-        title: "Véloclub auf Spotify",
-        url: "https://open.spotify.com/artist/2ATI9IAeXPE31HKReWj40a",
-        icon: SiSpotify,
-    },
-    {
         title: "Véloclub auf TikTok",
         url: "https://www.tiktok.com/@veloclubband",
         icon: SiTiktok,
+    },
+    {
+        title: "Véloclub auf Youtube",
+        url: "https://www.youtube.com/@veloclubband",
+        icon: SiYoutube,
+    },
+    {
+        title: "Véloclub auf Spotify",
+        url: "https://open.spotify.com/artist/2ATI9IAeXPE31HKReWj40a",
+        icon: SiSpotify,
     },
     {
         title: "Véloclub auf Apple Music",
@@ -53,9 +58,9 @@ export const SOCIAL_LINKS: SocialLink[] = [
         icon: SiApplemusic,
     },
     {
-        title: "Véloclub auf Youtube",
-        url: "https://www.youtube.com/@veloclubband",
-        icon: SiYoutube,
+        title: "Véloclub auf Bandsintown",
+        url: "https://www.bandsintown.com/a/15536074-veloclub",
+        icon: SiBandsintown,
     },
     {
         title: "Webseite",
