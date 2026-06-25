@@ -1,4 +1,4 @@
-export function AppFooter() {
+export function Footer() {
     return (
         <footer className={"flex flex-col items-center justify-center gap-5 text-xs text-gray-500"}>
             <div className={"flex gap-4"}>

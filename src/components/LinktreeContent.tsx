@@ -4,6 +4,8 @@ import type {TreeLink} from "../data/types.ts";
 export function LinktreeContent() {
     return (
         <div className={"flex w-full flex-col gap-2 px-4"}>
+
+            {/* Tree Links */}
             {TREE_LINKS.map((link: TreeLink, index: number) => {
                 const animationDurationMs = 300 + index * 125;
                 return (
@@ -19,6 +21,7 @@ export function LinktreeContent() {
                 );
             })}
 
+            {/* E-Mail Section */}
             <div className={"flex gap-3"}>
                 <a
                     href={"mailto:booking@veloclubband.de"}
@@ -37,6 +40,8 @@ export function LinktreeContent() {
                     <span>Kontakt</span>
                 </a>
             </div>
+
+            {/* Music Streaming iframes */}
 
             <iframe
                 src={SPOTIFY_EMBED_URL}

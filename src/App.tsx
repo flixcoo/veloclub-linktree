@@ -1,4 +1,4 @@
-import {AppFooter} from "./components/AppFooter.tsx";
+import {Footer} from "./components/Footer.tsx";
 import {LinktreeContent} from "./components/LinktreeContent.tsx";
 import {ProfileSection} from "./components/ProfileSection.tsx";
 
@@ -9,7 +9,7 @@ function App() {
                 <ProfileSection/>
                 <LinktreeContent/>
             </div>
-            <AppFooter/>
+            <Footer/>
         </section>
     );
 }
