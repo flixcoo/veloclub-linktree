@@ -4,7 +4,7 @@ services:
     container_name: veloclub-linktree
     restart: unless-stopped
     ports:
-      - "8081:80"
+      - "8083:80"
     networks:
       - web
 networks:
