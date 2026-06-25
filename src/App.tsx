@@ -86,7 +86,7 @@ function App() {
                             width="100%"
                             height="80"
                             allow="encrypted-media"
-                            className={"link-intro rounded-sm"}
+                            className={"link-intro rounded-sm shadow-lg"}
                             style={{animationDuration: `${300 + (TREE_LINKS.length + 1) * 125}ms`}}
                         />
 
@@ -96,7 +96,7 @@ function App() {
                             width="100%"
                             height="450px"
                             allow="encrypted-media"
-                            className={"link-intro rounded-sm"}
+                            className={"link-intro rounded-sm shadow-lg"}
                             style={{animationDuration: `${300 + (TREE_LINKS.length + 2) * 125}ms`}}
                         />
 
@@ -105,7 +105,7 @@ function App() {
                             src={SOUNDCLOUD_EMBED_LINK}
                             allowFullScreen
                             allow="encrypted-media *;"
-                            className={"link-intro rounded-sm"}
+                            className={"link-intro rounded-sm shadow-lg"}
                             style={{animationDuration: `${300 + (TREE_LINKS.length + 3) * 125}ms`}}
                         />
                     </div>
