@@ -7,9 +7,7 @@ export function ProfileSection() {
             <h1
                 className={"text-center text-3xl text-black lowercase select-none"}
                 style={{fontFamily: "Antique Olive Compact, sans-serif"}}
-            >
-                Véloclub
-            </h1>
+            >Véloclub</h1>
 
             <a href={"https://veloclubband.de"} target="_blank" rel="noopener noreferrer">
                 <img
