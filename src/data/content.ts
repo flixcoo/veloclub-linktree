@@ -12,22 +12,22 @@ export const TREE_LINKS: TreeLink[] = [
     {
         title: "gefühle an, gefühle aus out now!",
         url: "https://push.fm/fl/p4vwfpwf",
-        image: "images/release.webp",
+        image: "images/links/release.webp",
     },
     {
         title: " Véloclub - renn los // MITTINDRIN Live Sessions",
         url: "https://www.youtube.com/watch?v=mW8woxPvl-I&list=PLBOogAx07jd4Sg6Q1UOiJNgUBABEwynD0",
-        image: "images/mittendrin.webp",
+        image: "images/links/mittendrin.webp",
     },
     {
         title: "29.08. - Organic Beats Festival, Braunschweig",
         url: "https://organicbeats.org/",
-        image: "images/organic-beats.webp",
+        image: "images/links/organic-beats.webp",
     },
     {
         title: "18.09. - Umbaubar, Oldenburg",
         url: "https://rausgegangen.de/events/konzert-velo-club-0/",
-        image: "images/umbaubar.webp",
+        image: "images/links/umbaubar.webp",
     },
 ]
 
