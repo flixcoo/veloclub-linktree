@@ -21,7 +21,7 @@ export const TREE_LINKS: TreeLink[] = [
     },
     {
         title: "29.08. - Organic Beats Festival, Braunschweig",
-        url: "https://organicbeats.org/",
+        url: "https://organicbeats.org/tickets/",
         image: "images/links/organic-beats.webp",
     },
     {
