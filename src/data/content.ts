@@ -64,7 +64,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
     },
     {
         title: "Webseite",
-        url: "https://www.veloclubband.de",
+        url: "https://veloclubband.de",
         icon: FaGlobe,
     }
 ];
