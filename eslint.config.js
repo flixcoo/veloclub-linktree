@@ -38,7 +38,7 @@ export default [
             'tailwindcss/no-arbitrary-value': 'warn',
             'tailwindcss/no-custom-classname': [
                 'warn',
-                {whitelist: ['App', 'custom\\-*', 'text-md', 'md:text-md', 'align-start']},
+                {whitelist: ['App', 'custom\\-*', 'link-intro']},
             ],
             'tailwindcss/no-contradicting-classname': 'error',
             '@typescript-eslint/no-unused-vars': ['warn', {argsIgnorePattern: '^_'}],
