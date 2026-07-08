@@ -1,4 +1,4 @@
-import type {IconType} from "react-icons";
+import type {IconType} from 'react-icons';
 
 export type TreeLink = {
     title: string;
@@ -10,4 +10,4 @@ export type SocialLink = {
     title: string;
     url: string;
     icon: IconType;
-}
+};

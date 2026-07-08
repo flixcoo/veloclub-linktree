@@ -1,12 +1,12 @@
 services:
-  veloclub-linktree:
-    build: .
-    container_name: veloclub-linktree
-    restart: unless-stopped
-    ports:
-      - "8083:80"
-    networks:
-      - web
+    veloclub-linktree:
+        build: .
+        container_name: veloclub-linktree
+        restart: unless-stopped
+        ports:
+            - '8083:80'
+        networks:
+            - web
 networks:
-  web:
-    external: true
+    web:
+        external: true

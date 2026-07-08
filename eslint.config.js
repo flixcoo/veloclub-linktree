@@ -19,7 +19,7 @@ export default [
             js,
             'react-hooks': reactHooks,
             'react-refresh': reactRefresh,
-            tailwindcss: eslintPluginTailwindcss,
+            'tailwindcss': eslintPluginTailwindcss,
         },
         languageOptions: {
             globals: globals.browser,
