@@ -36,10 +36,7 @@ export default [
             'react-refresh/only-export-components': ['warn', {allowConstantExport: true}],
             'tailwindcss/classnames-order': 'warn',
             'tailwindcss/no-arbitrary-value': 'warn',
-            'tailwindcss/no-custom-classname': [
-                'warn',
-                {whitelist: ['App', 'custom\\-*', 'link-intro']},
-            ],
+            'tailwindcss/no-custom-classname': ['warn', {whitelist: ['App', 'custom\\-*', 'link-intro']}],
             'tailwindcss/no-contradicting-classname': 'error',
             '@typescript-eslint/no-unused-vars': ['warn', {argsIgnorePattern: '^_'}],
         },
