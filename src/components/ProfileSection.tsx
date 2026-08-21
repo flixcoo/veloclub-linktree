@@ -16,7 +16,7 @@ export function ProfileSection() {
             <a href={'https://veloclubband.de'} target="_blank" rel="noopener noreferrer">
                 <img
                     src={'images/profile.webp'}
-                    fetchPriority={"high"}
+                    fetchPriority={'high'}
                     className={'size-50 rounded-full shadow-xl transition-all duration-300 ease-in-out hover:scale-98'}
                     alt={'Die Band Véloclub'}
                 />
