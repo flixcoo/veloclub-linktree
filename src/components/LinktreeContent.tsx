@@ -1,11 +1,18 @@
 import {APPLE_MUSIC_EMBED_URL, SOUNDCLOUD_EMBED_LINK, SPOTIFY_EMBED_URL, TREE_LINKS} from '../data/content.ts';
 import type {TreeLink} from '../data/types.ts';
 
+const filteredTreeLinks = TREE_LINKS.filter((link: TreeLink) => {
+    const now = new Date();
+    const isPublished = !link.publishAt || link.publishAt <= now;
+    const isNotExpired = !link.expireAt || link.expireAt > now;
+    return isPublished && isNotExpired;
+});
+
 export function LinktreeContent() {
     return (
         <div className={'flex w-full flex-col gap-2 px-4'}>
             {/* Tree Links */}
-            {TREE_LINKS.map((link: TreeLink, index: number) => {
+            {filteredTreeLinks.map((link: TreeLink, index: number) => {
                 const animationDurationMs = 300 + index * 125;
                 return (
                     <a key={link.url} href={link.url}>
@@ -15,7 +22,7 @@ export function LinktreeContent() {
                             }
                             style={{animationDuration: `${animationDurationMs}ms`}}
                         >
-                            <img className={'size-11 rounded-sm'} src={link.image} alt={link.title} />
+                            <img className={'size-11 rounded-sm'} src={link.image} alt={link.title}/>
                             {link.title}
                         </div>
                     </a>

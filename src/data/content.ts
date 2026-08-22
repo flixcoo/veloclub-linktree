@@ -12,9 +12,10 @@ export const SOUNDCLOUD_EMBED_LINK: string =
 
 export const TREE_LINKS: TreeLink[] = [
     {
-        title: 'gefühle an, gefühle aus out now!',
-        url: 'https://push.fm/fl/p4vwfpwf',
+        title: 'l\'amour hier pre-saven',
+        url: 'https://push.fm/ps/lamour',
         image: 'images/links/release.webp',
+        publishAt: new Date('2026-09-04T00:00:00'),
     },
     {
         title: ' Véloclub - renn los // MITTINDRIN Live Sessions',
@@ -25,11 +26,13 @@ export const TREE_LINKS: TreeLink[] = [
         title: '29.08. - Organic Beats Festival, Braunschweig',
         url: 'https://organicbeats.org/tickets/',
         image: 'images/links/organic-beats.webp',
+        expireAt: new Date('2026-08-29T19:30:00'),
     },
     {
         title: '18.09. - Umbaubar, Oldenburg',
         url: 'https://rausgegangen.de/events/konzert-velo-club-0/',
         image: 'images/links/umbaubar.webp',
+        expireAt: new Date('2026-09-18T21:00:00'),
     },
 ];
 

@@ -4,6 +4,8 @@ export type TreeLink = {
     title: string;
     url: string;
     image: string;
+    publishAt?: Date;
+    expireAt?: Date;
 };
 
 export type SocialLink = {
