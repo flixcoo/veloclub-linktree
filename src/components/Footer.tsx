@@ -22,16 +22,16 @@ export function Footer() {
 
             {/* Design flag*/}
             <span>
-                    Designed & developed by&nbsp;
+                Designed & developed by&nbsp;
                 <a
                     href="https://felixkirchner.de"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-black underline! transition-colors hover:text-orange-500"
                 >
-                        Felix Kirchner
-                    </a>
-                </span>
+                    Felix Kirchner
+                </a>
+            </span>
         </footer>
     );
 }
