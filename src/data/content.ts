@@ -25,11 +25,6 @@ export const TREE_LINKS: TreeLink[] = [
         publishAt: new Date('2026-09-04T00:00:00'),
     },
     {
-        title: ' Véloclub - renn los // MITTINDRIN Live Sessions',
-        url: 'https://www.youtube.com/watch?v=mW8woxPvl-I&list=PLBOogAx07jd4Sg6Q1UOiJNgUBABEwynD0',
-        image: 'images/links/mittendrin.webp',
-    },
-    {
         title: '29.08. - Organic Beats Festival, Braunschweig',
         url: 'https://organicbeats.org/tickets/',
         image: 'images/links/organic-beats.webp',
@@ -40,6 +35,11 @@ export const TREE_LINKS: TreeLink[] = [
         url: 'https://rausgegangen.de/events/konzert-velo-club-0/',
         image: 'images/links/umbaubar.webp',
         expireAt: new Date('2026-09-18T21:00:00'),
+    },
+    {
+        title: ' Véloclub - renn los // MITTINDRIN Live Sessions',
+        url: 'https://www.youtube.com/watch?v=mW8woxPvl-I&list=PLBOogAx07jd4Sg6Q1UOiJNgUBABEwynD0',
+        image: 'images/links/mittendrin.webp',
     },
 ];
 
