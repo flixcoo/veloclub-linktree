@@ -12,23 +12,10 @@ export const SOUNDCLOUD_EMBED_LINK: string =
 
 export const TREE_LINKS: TreeLink[] = [
     {
-        title: "L'AMOUR hier pre-saven",
-        url: 'https://push.fm/ps/lamour',
-        image: 'images/links/release.webp',
-        publishAt: new Date('2026-08-27T10:00:00'),
-        expireAt: new Date('2026-09-04T00:00:00'),
-    },
-    {
         title: "L'AMOUR hier streamen",
-        url: 'https://push.fm/ps/lamour',
+        url: 'https://push.fm/fl/lamour',
         image: 'images/links/release.webp',
         publishAt: new Date('2026-09-04T00:00:00'),
-    },
-    {
-        title: '29.08. - Organic Beats Festival, Braunschweig',
-        url: 'https://organicbeats.org/tickets/',
-        image: 'images/links/organic-beats.webp',
-        expireAt: new Date('2026-08-29T19:30:00'),
     },
     {
         title: '18.09. - Umbaubar, Oldenburg',
