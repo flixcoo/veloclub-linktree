@@ -12,19 +12,22 @@ export const SOUNDCLOUD_EMBED_LINK: string =
 
 export const TREE_LINKS: TreeLink[] = [
     {
-        title: "L'AMOUR hier hören",
+        content: "L'AMOUR hier hören",
+        title: "Hier kannst du unseren neuen Song 'L'AMOUR' hören",
         url: 'https://push.fm/fl/lamour',
         image: 'images/links/release.webp',
         publishAt: new Date('2026-09-04T00:00:00'),
     },
     {
-        title: '18.09. - Umbaubar, Oldenburg',
+        content: '18.09. - Umbaubar, Oldenburg',
+        title: "Hier geht's zu den Tickets für unser Konzert am 18.09. in der Umbaubar",
         url: 'https://rausgegangen.de/events/konzert-velo-club-0/',
         image: 'images/links/umbaubar.webp',
         expireAt: new Date('2026-09-18T21:00:00'),
     },
     {
-        title: ' Véloclub - renn los // MITTINDRIN Live Sessions',
+        content: ' Véloclub - renn los // MITTINDRIN Live Sessions',
+        title: "Hier geht's zu unserem Song 'renn los' aus der MITTINDRIN Live Session",
         url: 'https://www.youtube.com/watch?v=mW8woxPvl-I&list=PLBOogAx07jd4Sg6Q1UOiJNgUBABEwynD0',
         image: 'images/links/mittendrin.webp',
     },

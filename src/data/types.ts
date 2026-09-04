@@ -1,7 +1,8 @@
 import type {IconType} from 'react-icons';
 
 export type TreeLink = {
-    title: string;
+    content: string;
+    title?: string;
     url: string;
     image: string;
     publishAt?: Date;

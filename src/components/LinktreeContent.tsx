@@ -15,15 +15,15 @@ export function LinktreeContent() {
             {filteredTreeLinks.map((link: TreeLink, index: number) => {
                 const animationDurationMs = 300 + index * 125;
                 return (
-                    <a key={link.url} href={link.url}>
+                    <a key={link.url} href={link.url} title={link.title ?? link.content}>
                         <div
                             className={
                                 'link-intro flex w-full cursor-pointer flex-row items-center justify-start gap-3 rounded-sm bg-white p-2 text-sm shadow-md transition-all duration-300 ease-in-out hover:scale-95'
                             }
                             style={{animationDuration: `${animationDurationMs}ms`}}
                         >
-                            <img className={'size-11 rounded-sm'} src={link.image} alt={link.title} />
-                            {link.title}
+                            <img className={'size-11 rounded-sm'} src={link.image} alt={link.content}/>
+                            {link.content}
                         </div>
                     </a>
                 );
