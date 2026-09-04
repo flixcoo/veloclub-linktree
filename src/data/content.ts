@@ -12,7 +12,7 @@ export const SOUNDCLOUD_EMBED_LINK: string =
 
 export const TREE_LINKS: TreeLink[] = [
     {
-        title: "L'AMOUR hier streamen",
+        title: "L'AMOUR hier hören",
         url: 'https://push.fm/fl/lamour',
         image: 'images/links/release.webp',
         publishAt: new Date('2026-09-04T00:00:00'),
