@@ -22,7 +22,7 @@ export function LinktreeContent() {
                             }
                             style={{animationDuration: `${animationDurationMs}ms`}}
                         >
-                            <img className={'size-11 rounded-sm'} src={link.image} alt={link.content}/>
+                            <img className={'size-11 rounded-sm'} src={link.image} alt={link.content} />
                             {link.content}
                         </div>
                     </a>
