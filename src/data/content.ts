@@ -12,7 +12,7 @@ export const SOUNDCLOUD_EMBED_LINK: string =
 
 export const TREE_LINKS: TreeLink[] = [
     {
-        content: "04.01. Groovestation, Dresden - Handreicher Newcomer",
+        content: '04.01. Groovestation, Dresden - Handreicher Newcomer',
         title: "Hier kannst du unseren neuen Song 'L'AMOUR' hören",
         url: 'https://landstreicher-konzerte.de/handreicher-2027',
         image: 'images/links/handreicher.webp',
