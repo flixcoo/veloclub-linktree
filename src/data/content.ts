@@ -12,6 +12,13 @@ export const SOUNDCLOUD_EMBED_LINK: string =
 
 export const TREE_LINKS: TreeLink[] = [
     {
+        content: "04.01. Groovestation, Dresden - Handreicher Newcomer",
+        title: "Hier kannst du unseren neuen Song 'L'AMOUR' hören",
+        url: 'https://landstreicher-konzerte.de/handreicher-2027',
+        image: 'images/links/handreicher.webp',
+        expireAt: new Date('2027-01-05T00:00:00'),
+    },
+    {
         content: "L'AMOUR hier hören",
         title: "Hier kannst du unseren neuen Song 'L'AMOUR' hören",
         url: 'https://push.fm/fl/lamour',
@@ -19,16 +26,9 @@ export const TREE_LINKS: TreeLink[] = [
         publishAt: new Date('2026-09-04T00:00:00'),
     },
     {
-        content: '18.09. - Umbaubar, Oldenburg',
-        title: "Hier geht's zu den Tickets für unser Konzert am 18.09. in der Umbaubar",
-        url: 'https://rausgegangen.de/events/konzert-velo-club-0/',
-        image: 'images/links/umbaubar.webp',
-        expireAt: new Date('2026-09-18T21:00:00'),
-    },
-    {
-        content: ' Véloclub - renn los // MITTINDRIN Live Sessions',
-        title: "Hier geht's zu unserem Song 'renn los' aus der MITTINDRIN Live Session",
-        url: 'https://www.youtube.com/watch?v=mW8woxPvl-I&list=PLBOogAx07jd4Sg6Q1UOiJNgUBABEwynD0',
+        content: ' Véloclub - ich brauch dich nicht // MITTINDRIN Live Sessions ',
+        title: "Hier geht's zu unserem Song 'ich brauch dich nicht' aus der MITTINDRIN Live Session",
+        url: 'https://www.youtube.com/watch?v=v76iIlg8P9o&list=PLBOogAx07jd4Sg6Q1UOiJNgUBABEwynD0&index=2',
         image: 'images/links/mittendrin.webp',
     },
 ];
