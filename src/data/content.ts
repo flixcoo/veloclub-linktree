@@ -14,7 +14,7 @@ export const TREE_LINKS: TreeLink[] = [
     {
         content: "04.01. Groovestation, Dresden - Handreicher Newcomer",
         title: "Hier kannst du unseren neuen Song 'L'AMOUR' hören",
-        url: 'https://landstreicher-konzerte.de/handreicher-2027',
+        url: 'https://landstreicher-konzerte.de/konzerte/handreicher-indie-dd-27',
         image: 'images/links/handreicher.webp',
         expireAt: new Date('2027-01-05T00:00:00'),
     },
